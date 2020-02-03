@@ -298,7 +298,7 @@ RectTransform:
   - {fileID: 102040788}
   - {fileID: 492221843}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 631196542}
   - component: {fileID: 631196543}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: GameManager
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -675,7 +675,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &631196543
 MonoBehaviour:
@@ -686,10 +686,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 631196541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eaa88d0ec49f584e91f820937756c1a, type: 3}
+  m_Script: {fileID: 11500000, guid: a5bbd05b5ffa4bd459ba8f7d73ba9b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayers: 1
 --- !u!1 &804400732
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +865,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &906644988
 GameObject:

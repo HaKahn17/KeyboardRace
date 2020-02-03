@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
     void Start() 
     {
         rb2d = GetComponent<Rigidbody2D>();
-        currentKey = Keycodes.getPlayerCode(1);
+        currentKey = Keycodes.getPlayerCode(playerNum);
     }
 
     // Update is called once per frame
