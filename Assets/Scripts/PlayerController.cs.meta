@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Scripts/PlayerController.cs.meta
-guid: 4096d7cbc6d59724481f2a633de87902
-=======
-guid: 63a475da87df4f144ad89ff83a8d6ce5
->>>>>>> f35b7d38132428e4116f86739e246d5a9f31827d:Assets/Scripts/ObstacleController.cs.meta
+guid: 4d8f7562ad5b37b4e8ef8ef9e94ac8f9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

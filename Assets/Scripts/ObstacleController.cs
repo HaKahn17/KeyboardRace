@@ -7,6 +7,7 @@ public class ObstacleController : MonoBehaviour
     public int length;
     public double timePerObstacle;
     public GameObject bottomObstacle;
+    public GameObject topObstacle;
 
     private double timer;
     // Start is called before the first frame update
@@ -21,8 +22,23 @@ public class ObstacleController : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            Vector3 obsPos = new Vector3(transform.position.x, transform.position.y - length);
-            Instantiate(bottomObstacle, obsPos, Quaternion.identity);
+            Vector3 obsPos;
+            int rand = Random.Range(0, 2);
+
+            switch (rand)
+            {
+                // Bottom
+                case 0:
+                    obsPos = new Vector3(transform.position.x, transform.position.y - length);
+                    Instantiate(bottomObstacle, obsPos, Quaternion.identity);
+                    break;
+                // Top
+                case 1:
+                    obsPos = new Vector3(transform.position.x, transform.position.y + length);
+                    Instantiate(topObstacle, obsPos, Quaternion.identity);
+                    break;
+            }
+            
             timer = timePerObstacle;
         }
     }
