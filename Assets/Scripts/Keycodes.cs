@@ -15,11 +15,8 @@ public static class Keycodes
         {
             allCodes.Add((KeyCode)key);
         }
-        for (int i = 1; i < 5; i++)
-        {
-            getNewCode(i);
-        }
-        KeyCode[] start = {getPlayerCode(1), getPlayerCode(2), getPlayerCode(3), getPlayerCode(4)};
+        allCodes.Add(KeyCode.None);
+        KeyCode[] start = {KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None};
         playerKeycodes = start;
     }
 
@@ -32,7 +29,7 @@ public static class Keycodes
     {
         do
         {
-            playerKeycodes[playerNumber - 1] = allCodes[Random.Range(0, allCodes.Count)];
+            playerKeycodes[playerNumber - 1] = allCodes[Random.Range(0, allCodes.Count-1)];
         } while (playerKeycodes[playerNumber - 1] == playerKeycodes[playerNumber % 4] || playerKeycodes[playerNumber - 1] == playerKeycodes[(playerNumber + 1) % 4] || playerKeycodes[playerNumber - 1] == playerKeycodes[(playerNumber+2) % 4]);
 
 
