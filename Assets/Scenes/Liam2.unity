@@ -226,6 +226,11 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6266110449143946072, guid: c74a925a8334d0245bad11a944ae74e1,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6266110449143946073, guid: c74a925a8334d0245bad11a944ae74e1,
         type: 3}
       propertyPath: playerNum
@@ -319,6 +324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_GravityScale
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266110449143946072, guid: c74a925a8334d0245bad11a944ae74e1,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6266110449143946074, guid: c74a925a8334d0245bad11a944ae74e1,
         type: 3}
@@ -800,8 +810,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: timePerObstacle
-      value: 1.5
+      propertyPath: length
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMaxWidth
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMinWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMinLength
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMaxLength
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1783041111720318248, guid: bb9e80958dd71cc49826eff83b9ce989,
         type: 3}
