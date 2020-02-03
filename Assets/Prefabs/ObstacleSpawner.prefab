@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1783041111720318248}
-  - component: {fileID: 1783041111720318249}
+  - component: {fileID: 1429311243}
   m_Layer: 0
   m_Name: ObstacleSpawner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1783041111720318249
+--- !u!114 &1429311243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,13 +40,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783041111720318250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a475da87df4f144ad89ff83a8d6ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bc4c1641493fe549a9717f4ff404678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   length: 2
   obstacleMaxLength: 2.5
-  timePerObstacle: 2
-  bottomObstacle: {fileID: 7222428371601343122, guid: 755d97895ced0e6439e6920cf140853e,
+  timePerObstacle: 2.5
+  bottomObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
     type: 3}
-  topObstacle: {fileID: 7222428371601343122, guid: 755d97895ced0e6439e6920cf140853e,
+  topObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
     type: 3}
