@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
     void Start() 
     {
         rb2d = GetComponent<Rigidbody2D>();
+        Keycodes.getNewCode(playerNum);
         currentKey = Keycodes.getPlayerCode(playerNum);
     }
 
