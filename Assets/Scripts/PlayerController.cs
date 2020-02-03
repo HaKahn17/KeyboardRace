@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour {
     public float jumpSpeed;
+    public float moveSpeed;
     public LayerMask groundLayer;
     public int playerNum; 
 
@@ -19,6 +20,9 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() 
     {
+        if (rb2d.velocity.x >= 0)
+            rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+
         if (Input.GetKeyDown(currentKey) && IsGrounded()) 
         {
             rb2d.velocity += Vector2.up * jumpSpeed;

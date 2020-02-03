@@ -256,6 +256,11 @@ PrefabInstance:
       propertyPath: playerNum
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6266110449143946073, guid: c74a925a8334d0245bad11a944ae74e1,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6266110449143946074, guid: c74a925a8334d0245bad11a944ae74e1,
         type: 3}
       propertyPath: m_Name
@@ -644,34 +649,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObstacleSpawner
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1783041111720318249, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
---- !u!1 &1429311242 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1783041111720318250, guid: bb9e80958dd71cc49826eff83b9ce989,
-    type: 3}
-  m_PrefabInstance: {fileID: 945273740}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1429311243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429311242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc4c1641493fe549a9717f4ff404678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 2
-  obstacleMaxLength: 2.5
-  timePerObstacle: 2.5
-  bottomObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
-    type: 3}
-  topObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
-    type: 3}
 --- !u!1001 &1518762018
 PrefabInstance:
   m_ObjectHideFlags: 0

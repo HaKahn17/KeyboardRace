@@ -5,11 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+    public static GameManager instance;
+
     public int PlayersRemaining {get; set; }
 
     // Start is called before the first frame update
     void Awake()
     {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
         Keycodes.addCodes();
         PlayersRemaining = 2;
     }
@@ -21,6 +34,7 @@ public class GameManager : MonoBehaviour
         {
             // If one player is remaining reload the scene
             //TODO: Change to main menu later
+            PlayersRemaining = 2;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
