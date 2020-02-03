@@ -27,4 +27,12 @@ public class PlayerController : MonoBehaviour {
         var hit = Physics2D.Raycast(transform.position, -Vector2.up, 1f, groundLayer);
         return hit.collider != null;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
