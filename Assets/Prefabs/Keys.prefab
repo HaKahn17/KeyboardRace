@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.028301895, g: 0.028168395, b: 0.028168395, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -87,7 +87,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab02933daa0b8f4cb90df2d76f43c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 1741006955607520869, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad, type: 3}
   playerNumber: 4
 --- !u!1 &1127263091672177203
 GameObject:
@@ -102,7 +101,7 @@ GameObject:
   - component: {fileID: 1127263091672177205}
   - component: {fileID: 1127263091672177204}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Keys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -433,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.29260933, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -460,7 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab02933daa0b8f4cb90df2d76f43c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 1741006955607520869, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad, type: 3}
   playerNumber: 3
 --- !u!1 &1127263092084364412
 GameObject:
@@ -522,7 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5471698, g: 0.39303854, b: 0.20389818, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -549,7 +547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab02933daa0b8f4cb90df2d76f43c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 1741006955607520869, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad, type: 3}
   playerNumber: 2
 --- !u!1 &1127263092453237795
 GameObject:
@@ -702,7 +699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.0323627, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -729,7 +726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab02933daa0b8f4cb90df2d76f43c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 1741006955607520869, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad, type: 3}
   playerNumber: 1
 --- !u!1 &1127263092762306713
 GameObject:
