@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    public int PlayersRemaining {get; set; }
+    public int PlayersRemaining;
 
     // Start is called before the first frame update
     void Awake()
@@ -37,5 +37,10 @@ public class GameManager : MonoBehaviour
             PlayersRemaining = 2;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    public void SetNumPlayers(float val)
+    {
+        PlayersRemaining = (int)val;
     }
 }

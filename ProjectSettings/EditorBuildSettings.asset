@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Haakon.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: d44106b7eb31f314d98a3f639c595aa6
+  - enabled: 1
+    path: Assets/Scenes/Michael.unity
+    guid: 18398d36f364b3140ba9d9a48d5cb541
   m_configObjects: {}
