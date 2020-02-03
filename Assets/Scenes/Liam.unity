@@ -146,13 +146,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 873651657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a475da87df4f144ad89ff83a8d6ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bc4c1641493fe549a9717f4ff404678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 2
-  timePerObstacle: 3
-  bottomObstacle: {fileID: 7222428371601343122, guid: a5c734936b8d5c84482a3b75b5d6db15,
-    type: 3}
+  length: 0
+  timePerObstacle: 0
+  bottomObstacle: {fileID: 0}
 --- !u!4 &873651659
 Transform:
   m_ObjectHideFlags: 0
