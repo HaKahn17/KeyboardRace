@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour {
     bool IsGrounded()
     {
         LayerMask combined = groundLayer | playerMask;
-        Vector2 origin = transform.position - new Vector3(0, .6f);
+        Vector2 origin = transform.position - new Vector3(0, GetComponent<BoxCollider2D>().size.y/2);
         var hit = Physics2D.Raycast(origin, -Vector2.up, .1f, combined);
         Debug.DrawRay(origin, -Vector2.up, Color.green);
         return hit.collider != null;
