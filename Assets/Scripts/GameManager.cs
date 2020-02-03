@@ -8,8 +8,9 @@ public class GameManager : MonoBehaviour
     public int PlayersRemaining {get; set; }
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        Keycodes.addCodes();
         PlayersRemaining = 2;
     }
 

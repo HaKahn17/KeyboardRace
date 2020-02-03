@@ -145,6 +145,16 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5071117}
   m_Enabled: 1
+<<<<<<< HEAD
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc4c1641493fe549a9717f4ff404678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  length: 0
+  timePerObstacle: 0
+  bottomObstacle: {fileID: 0}
+--- !u!4 &873651659
+=======
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -198,6 +208,7 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &5071119
+>>>>>>> 030f811896e1ca3865aa2e0535e70480634c18f5
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
