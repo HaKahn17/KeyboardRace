@@ -454,11 +454,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8445743165493332629, guid: 32c127fe07343a84c9f3c3c1098048f6,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8445743165493332634, guid: 32c127fe07343a84c9f3c3c1098048f6,
         type: 3}
       propertyPath: m_Name
@@ -809,30 +804,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: length
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: obstacleMaxWidth
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: obstacleLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: obstacleMinWidth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: obstacleMinLength
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: obstacleMaxLength
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 1783041111720318248, guid: bb9e80958dd71cc49826eff83b9ce989,
         type: 3}
       propertyPath: m_LocalPosition.x
