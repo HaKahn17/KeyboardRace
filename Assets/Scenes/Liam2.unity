@@ -251,6 +251,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6266110449143946072, guid: c74a925a8334d0245bad11a944ae74e1,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266110449143946072, guid: c74a925a8334d0245bad11a944ae74e1,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6266110449143946073, guid: c74a925a8334d0245bad11a944ae74e1,
         type: 3}
       propertyPath: playerNum

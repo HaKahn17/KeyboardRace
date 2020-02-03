@@ -20,19 +20,20 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() 
     {
-        if (rb2d.velocity.x >= 0)
-            rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
-
         if (Input.GetKeyDown(currentKey) && IsGrounded()) 
         {
             rb2d.velocity += Vector2.up * jumpSpeed;
             RandomizeKey();
         }
+        else if (IsGrounded())
+        {
+            rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+        }
     }
 
     bool IsGrounded()
     {
-        var hit = Physics2D.Raycast(transform.position, -Vector2.up, 1f, groundLayer);
+        var hit = Physics2D.Raycast(transform.position, -Vector2.up, .7f, groundLayer);
         return hit.collider != null;
     }
 
