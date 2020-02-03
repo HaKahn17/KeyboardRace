@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (Input.GetButtonDown("Jump") && IsGrounded()) 
         {
-            rb2d.velocity = Vector2.up * jumpSpeed;
+            rb2d.velocity += Vector2.up * jumpSpeed;
         }
     }
 
