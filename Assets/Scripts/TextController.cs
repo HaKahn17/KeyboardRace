@@ -75,6 +75,10 @@ public class TextController : MonoBehaviour
         {
             return "=";
         }
+        if(input.Equals("None"))
+        {
+            return "bad";
+        }
         if (input.Contains("Alpha"))
         {
             return input.Substring(5);

@@ -15,7 +15,7 @@ public static class Keycodes
         {
             allCodes.Add((KeyCode)key);
         }
-        KeyCode[] start = {allCodes[0], allCodes[10], allCodes[20], allCodes[30]};
+        KeyCode[] start = {KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None};
         playerKeycodes = start;
     }
 
