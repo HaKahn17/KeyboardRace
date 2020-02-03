@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 2
-  timePerObstacle: 3
+  obstacleMaxLength: 2.5
+  timePerObstacle: 2
   bottomObstacle: {fileID: 7222428371601343122, guid: 755d97895ced0e6439e6920cf140853e,
     type: 3}
   topObstacle: {fileID: 7222428371601343122, guid: 755d97895ced0e6439e6920cf140853e,
