@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 1741006955607520869, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad,
         type: 3}
       propertyPath: playersRemaining
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1741006955607520890, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad,
         type: 3}
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_MinValue: 2
   m_MaxValue: 4
   m_WholeNumbers: 1
-  m_Value: 3
+  m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
