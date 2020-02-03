@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
     private AudioSource audioSource;
     private KeyCode currentKey;
+    private bool isDead;
 
     // Start is called before the first frame update
     void Start() 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         RandomizeKey();
+        isDead = false;
     }
 
     // Update is called once per frame
@@ -52,12 +54,12 @@ public class PlayerController : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.CompareTag("Despawn"))
+        if (collision.collider.gameObject.CompareTag("Despawn")&&!isDead)
         {
             FindObjectOfType<GameManager>().playersRemaining--;
             //TODO make a coroutine so noise is played
-            audioSource.PlayOneShot(deathNoise);
-            Destroy(gameObject);
+            StartCoroutine(die());
+            
         }
     }
     
@@ -66,5 +68,13 @@ public class PlayerController : MonoBehaviour {
         Keycodes.getNewCode(playerNum);
         currentKey = Keycodes.getPlayerCode(playerNum);
         
+    }
+
+    public IEnumerator die()
+    {
+        isDead = true;
+        audioSource.PlayOneShot(deathNoise);
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }

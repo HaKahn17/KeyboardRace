@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public int playersRemaining;
 
+    private bool gameOver;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,24 +24,32 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        gameOver = false;
         Keycodes.addCodes();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playersRemaining == 1)
+        if (playersRemaining == 1 && !gameOver)
         {
             // If one player is remaining reload the scene
             //TODO: Change to main menu later
-            SceneManager.LoadScene("Title");
-            playersRemaining = 3;
+            gameOver = true;
+            StartCoroutine(reload());
+            
+ 
         }
     }
 
     public void SetNumPlayers(float val)
     {
         playersRemaining = (int)val;
+    }
+
+    public IEnumerator reload()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Title");
     }
 }
