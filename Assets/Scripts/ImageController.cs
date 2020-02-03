@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ImageController : MonoBehaviour
 {
-    public GameManager gm;
+    private GameManager gm;
     public int playerNumber;
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameManager.instance;
         gameObject.SetActive(true);
         int[] onePlayer= { 0 };
         int[] twoPlayer = { -300, 300 };
