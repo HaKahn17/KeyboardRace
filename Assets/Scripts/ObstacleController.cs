@@ -5,6 +5,9 @@ using UnityEngine;
 public class ObstacleController : MonoBehaviour
 {
     public int length;
+    public float obstacleMinWidth;
+    public float obstacleMaxWidth;
+    public float obstacleMinLength;
     public float obstacleMaxLength;
     public double timePerObstacle;
     public GameObject bottomObstacle;
@@ -43,7 +46,7 @@ public class ObstacleController : MonoBehaviour
 
             // Random length
             if (obs != null)
-                obs.transform.localScale = new Vector3(Random.Range(1f, obstacleMaxLength), 2, 0);
+                obs.transform.localScale = new Vector3(Random.Range(obstacleMinWidth, obstacleMaxWidth), Random.Range(obstacleMinLength, obstacleMaxLength), 0);
             
             timer = timePerObstacle;
         }

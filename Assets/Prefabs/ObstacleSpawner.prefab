@@ -43,9 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4c1641493fe549a9717f4ff404678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 2
-  obstacleMaxLength: 2.5
-  timePerObstacle: 2.5
+  length: 6
+  obstacleMinWidth: 1
+  obstacleMaxWidth: 2.5
+  obstacleMinLength: 9
+  obstacleMaxLength: 11
+  timePerObstacle: 1.5
   bottomObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
     type: 3}
   topObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
