@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bbd05b5ffa4bd459ba8f7d73ba9b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playersRemaining: 3
+  playersRemaining: 2

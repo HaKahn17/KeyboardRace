@@ -210,6 +210,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1741006955607520869, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad,
+        type: 3}
+      propertyPath: playersRemaining
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1741006955607520890, guid: 45f5ff2fa4057f94c8a659ea9f2b7bad,
         type: 3}
       propertyPath: m_LocalPosition.x

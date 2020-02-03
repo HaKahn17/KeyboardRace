@@ -6,9 +6,12 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
     public LayerMask groundLayer;
     public LayerMask playerMask;
-    public int playerNum; 
+    public int playerNum;
+    public AudioClip deathNoise;
+    public AudioClip jumpNoise;
 
     private Rigidbody2D rb2d;
+    private AudioSource audioSource;
     private KeyCode currentKey;
 
     // Start is called before the first frame update
@@ -19,6 +22,7 @@ public class PlayerController : MonoBehaviour {
             gameObject.SetActive(false);
 
         rb2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         RandomizeKey();
     }
 
@@ -27,6 +31,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (Input.GetKeyDown(currentKey) && IsGrounded()) 
         {
+            audioSource.PlayOneShot(jumpNoise);
             rb2d.velocity += Vector2.up * jumpSpeed;
             RandomizeKey();
         }
@@ -50,6 +55,8 @@ public class PlayerController : MonoBehaviour {
         if (collision.collider.gameObject.CompareTag("Despawn"))
         {
             FindObjectOfType<GameManager>().playersRemaining--;
+            //TODO make a coroutine so noise is played
+            audioSource.PlayOneShot(deathNoise);
             Destroy(gameObject);
         }
     }

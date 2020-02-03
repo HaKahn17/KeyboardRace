@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        playersRemaining = 3;
         Keycodes.addCodes();
     }
 
