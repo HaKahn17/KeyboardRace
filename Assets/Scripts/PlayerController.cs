@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
     public float jumpSpeed;
     public float moveSpeed;
     public LayerMask groundLayer;
+    public LayerMask playerMask;
     public int playerNum; 
 
     private Rigidbody2D rb2d;
@@ -38,7 +39,10 @@ public class PlayerController : MonoBehaviour {
 
     bool IsGrounded()
     {
-        var hit = Physics2D.Raycast(transform.position, -Vector2.up, .54f, groundLayer);
+        LayerMask combined = groundLayer | playerMask;
+        Vector2 origin = transform.position - new Vector3(0, .6f);
+        var hit = Physics2D.Raycast(origin, -Vector2.up, .1f, combined);
+        Debug.DrawRay(origin, -Vector2.up, Color.green);
         return hit.collider != null;
     }
 
