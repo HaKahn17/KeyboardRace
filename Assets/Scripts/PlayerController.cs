@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() 
     {
+        if (isDead)
+            return;
         if (Input.GetKeyDown(currentKey) && IsGrounded()) 
         {
             audioSource.PlayOneShot(jumpNoise);
