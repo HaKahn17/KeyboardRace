@@ -15,13 +15,13 @@ public class ImageController : MonoBehaviour
         int[] twoPlayer = { -300, 300 };
         int[] threePlayer = { -400, 0, 400 };
         int[][] positions = {onePlayer, twoPlayer, threePlayer};
-        if(gm.PlayersRemaining<playerNumber)
+        if(gm.playersRemaining<playerNumber)
         {
             gameObject.SetActive(false);
         }
-        else if(gm.PlayersRemaining<4)
+        else if(gm.playersRemaining<4)
         {
-            transform.localPosition = new Vector2(positions[gm.PlayersRemaining-1][playerNumber-1], 200);
+            transform.localPosition = new Vector2(positions[gm.playersRemaining-1][playerNumber-1], 200);
         }
     }
 
