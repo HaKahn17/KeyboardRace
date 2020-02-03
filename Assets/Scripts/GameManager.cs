@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    public int PlayersRemaining;
+    public int playersRemaining;
 
     // Start is called before the first frame update
     void Awake()
@@ -22,25 +22,25 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+
+        playersRemaining = 3;
         Keycodes.addCodes();
-        PlayersRemaining = 2;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayersRemaining == 1)
+        if (playersRemaining == 1)
         {
             // If one player is remaining reload the scene
             //TODO: Change to main menu later
-            PlayersRemaining = 2;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Title");
+            playersRemaining = 3;
         }
     }
 
     public void SetNumPlayers(float val)
     {
-        PlayersRemaining = (int)val;
+        playersRemaining = (int)val;
     }
 }

@@ -13,6 +13,10 @@ public class PlayerController : MonoBehaviour {
     // Start is called before the first frame update
     void Start() 
     {
+        // Disable in case of too many players
+        if (playerNum > GameManager.instance.playersRemaining)
+            gameObject.SetActive(false);
+
         rb2d = GetComponent<Rigidbody2D>();
         Keycodes.getNewCode(playerNum);
         currentKey = Keycodes.getPlayerCode(playerNum);
@@ -42,7 +46,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (collision.collider.gameObject.CompareTag("Despawn"))
         {
-            FindObjectOfType<GameManager>().PlayersRemaining--;
+            FindObjectOfType<GameManager>().playersRemaining--;
             Destroy(gameObject);
         }
     }
