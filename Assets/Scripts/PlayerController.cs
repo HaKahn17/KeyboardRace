@@ -19,8 +19,7 @@ public class PlayerController : MonoBehaviour {
             gameObject.SetActive(false);
 
         rb2d = GetComponent<Rigidbody2D>();
-        Keycodes.getNewCode(playerNum);
-        currentKey = Keycodes.getPlayerCode(playerNum);
+        RandomizeKey();
     }
 
     // Update is called once per frame
