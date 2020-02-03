@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: c392f753ba1ecaa4eb39c0699f4dde2b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -670239576756875135
+    second: kit_from_firefox_0
+  - first:
+      213: -4270371695051361654
+    second: kit_from_firefox_1
+  - first:
+      213: 8835392905211669293
+    second: kit_from_firefox_2
+  - first:
+      213: -7775725492879763073
+    second: kit_from_firefox_3
+  - first:
+      213: 756724712457294336
+    second: kit_from_firefox_4
+  - first:
+      213: -9040380449820821244
+    second: kit_from_firefox_5
+  - first:
+      213: -5632610159598394099
+    second: kit_from_firefox_6
+  - first:
+      213: 6159077068273259212
+    second: kit_from_firefox_7
+  - first:
+      213: 6928449947583368043
+    second: kit_from_firefox_8
+  - first:
+      213: 6891846057788676332
+    second: kit_from_firefox_9
+  - first:
+      213: 8457367428211053599
+    second: kit_from_firefox_10
+  - first:
+      213: 4109991019336096833
+    second: kit_from_firefox_11
+  - first:
+      213: -4087651589644136320
+    second: kit_from_firefox_12
+  - first:
+      213: 996716724076349515
+    second: kit_from_firefox_13
+  - first:
+      213: 5476379773012098279
+    second: kit_from_firefox_14
+  - first:
+      213: -5560486532962287922
+    second: kit_from_firefox_15
+  - first:
+      213: -4772032017742293049
+    second: kit_from_firefox_16
+  - first:
+      213: -376510777960543576
+    second: kit_from_firefox_17
+  - first:
+      213: 6220034532661255996
+    second: kit_from_firefox_18
+  - first:
+      213: -8160213418932121258
+    second: kit_from_firefox_19
+  - first:
+      213: -6013872466313326495
+    second: kit_from_firefox_20
+  - first:
+      213: 471693260638763484
+    second: kit_from_firefox_21
+  - first:
+      213: 1803413672593907805
+    second: kit_from_firefox_22
+  - first:
+      213: 1029113457666655844
+    second: kit_from_firefox_23
+  - first:
+      213: 6553125706934339127
+    second: kit_from_firefox_24
+  - first:
+      213: 6884932348526658813
+    second: kit_from_firefox_25
+  - first:
+      213: 5457126803231157884
+    second: kit_from_firefox_26
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +121,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +151,660 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kit_from_firefox_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 641
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da13799b38b119b418d2dc7e8984542b
+      internalID: -670239576756875135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 641
+        width: 46
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473e89818912e574998220db0724ab8b
+      internalID: -4270371695051361654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 641
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd5ad49a4ebd6f4eb948d1e5c69b268
+      internalID: 8835392905211669293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 561
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6713dabb344bf2d4a82f4f0b6b3c5397
+      internalID: -7775725492879763073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 561
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff8d8cc3987e3d4c81eb287bd4551b4
+      internalID: 756724712457294336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 561
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444a81e9ac4c5f647b09376a50562da0
+      internalID: -9040380449820821244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 482
+        width: 45
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23384d4ca9df9d442a4339b4d5970062
+      internalID: -5632610159598394099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 483
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb133213730c4345892d23c5ff4f77c
+      internalID: 6159077068273259212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_8
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 494
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02f19264725dc5499fcbbbbc71001df
+      internalID: 6928449947583368043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 404
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2fabde5a319d042925c5264cd62f6f
+      internalID: 6891846057788676332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 404
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a58657159dcd7e4692b3838e1df34a4
+      internalID: 8457367428211053599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_11
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 404
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b49fbf30b9791b4ba41f84877117cf6
+      internalID: 4109991019336096833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 321
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0ea6b04cbea2e4598d2805681ab521
+      internalID: -4087651589644136320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_13
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 321
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbe570238e4ad449a192fe03eec5038
+      internalID: 996716724076349515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 321
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5b24dd2c853414686a854a8b0cc3e1
+      internalID: 5476379773012098279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 241
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4903350a70a499e4a93091b4b0b9d5d4
+      internalID: -5560486532962287922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 241
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b59a5a38a3e2d40b311631f2cc977a
+      internalID: -4772032017742293049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_17
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 241
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11137c8df551a5f49abbe3647ad80989
+      internalID: -376510777960543576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 163
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ae7625073619c4ebe14b1c225763cd
+      internalID: 6220034532661255996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 166
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94dcc53c2368b947a1ab3c37667e68b
+      internalID: -8160213418932121258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 171
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b969c3679028184eb7e79339080c7dc
+      internalID: -6013872466313326495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 91
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8b18adfc1de6943b442f8fbb1d46f4
+      internalID: 471693260638763484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_22
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 94
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76e077ff4b3a6d46a3419b3000407a0
+      internalID: 1803413672593907805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 94
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ab64841ed90dd46a308d4c102047dd
+      internalID: 1029113457666655844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e467bd4a488d541820a429f8315d58
+      internalID: 6553125706934339127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b351ccb2e7430bd44a56a06a52f9233b
+      internalID: 6884932348526658813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit_from_firefox_26
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba91d3d776fc9b44880af6e0fe5a8d4
+      internalID: 5457126803231157884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

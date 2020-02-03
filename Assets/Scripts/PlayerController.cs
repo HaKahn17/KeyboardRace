@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour {
     public int playerNum;
     public AudioClip deathNoise;
     public AudioClip jumpNoise;
+    public Sprite[] sprites;
 
     private Rigidbody2D rb2d;
     private AudioSource audioSource;
+    private SpriteRenderer sr;
     private KeyCode currentKey;
     private bool isDead;
 
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour {
 
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        sr = GetComponent<SpriteRenderer>();
         RandomizeKey();
         isDead = false;
     }

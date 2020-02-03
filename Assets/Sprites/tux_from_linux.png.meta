@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: c61b16dfdcd20ba40ae84a4a8b969f98
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1820213146858293925
+    second: tux_from_linux_0
+  - first:
+      213: 5178042940579551838
+    second: tux_from_linux_1
+  - first:
+      213: -4266914334287018433
+    second: tux_from_linux_2
+  - first:
+      213: -2788751690207217505
+    second: tux_from_linux_3
+  - first:
+      213: 8835345986678919195
+    second: tux_from_linux_4
+  - first:
+      213: -6014288539170313826
+    second: tux_from_linux_5
+  - first:
+      213: -7192127627433635634
+    second: tux_from_linux_6
+  - first:
+      213: 5706675595684404592
+    second: tux_from_linux_7
+  - first:
+      213: 4139832817535345390
+    second: tux_from_linux_8
+  - first:
+      213: 2755722332491115950
+    second: tux_from_linux_9
+  - first:
+      213: 2290422058863491367
+    second: tux_from_linux_10
+  - first:
+      213: -1937074933899889627
+    second: tux_from_linux_11
+  - first:
+      213: 8390236556532184989
+    second: tux_from_linux_12
+  - first:
+      213: -8051198402557119266
+    second: tux_from_linux_13
+  - first:
+      213: 2919602558884133659
+    second: tux_from_linux_14
+  - first:
+      213: 3907254826661836796
+    second: tux_from_linux_15
+  - first:
+      213: -4379638707513509314
+    second: tux_from_linux_16
+  - first:
+      213: -3942661924046518917
+    second: tux_from_linux_17
+  - first:
+      213: -5511846262280349176
+    second: tux_from_linux_18
+  - first:
+      213: 1207131986886213132
+    second: tux_from_linux_19
+  - first:
+      213: -3689469501162813423
+    second: tux_from_linux_20
+  - first:
+      213: -3490652899109203117
+    second: tux_from_linux_21
+  - first:
+      213: 3046413187715026089
+    second: tux_from_linux_22
+  - first:
+      213: 4247438718487425689
+    second: tux_from_linux_23
+  - first:
+      213: 3943245423910098445
+    second: tux_from_linux_24
+  - first:
+      213: 805239448750650049
+    second: tux_from_linux_25
+  - first:
+      213: 6663438018520532959
+    second: tux_from_linux_26
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +121,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +151,660 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tux_from_linux_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 641
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219f5ddb89c01c64c96419178f8d852b
+      internalID: -1820213146858293925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 641
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ba410a96560144ebb3ac86de6ecfaf
+      internalID: 5178042940579551838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 641
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a778f52457d8e40bc955fec7e1d408
+      internalID: -4266914334287018433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 561
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae5149a95fea274b9a6d8cc58f495a3
+      internalID: -2788751690207217505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 561
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecb734a54386184fb75b185093b6f59
+      internalID: 8835345986678919195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 561
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a61566cfca87042af1cfefb13e1692
+      internalID: -6014288539170313826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 487
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5271180ce7a755b448d94319300e30cd
+      internalID: -7192127627433635634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 493
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dad6380935af24988901b234d7ece5
+      internalID: 5706675595684404592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_8
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 491
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8315d81a2df2e234491d6e1108298577
+      internalID: 4139832817535345390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 402
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9e4ffe74955ea42a650d7ec0e22701
+      internalID: 2755722332491115950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 402
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2f2a14b55ce4c4aa961cea2ad8960f
+      internalID: 2290422058863491367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_11
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 403
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7c3cbb0bd73424ea091b1891533a89
+      internalID: -1937074933899889627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 321
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eccf9a45f2e6d547bda786125349b92
+      internalID: 8390236556532184989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 321
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743f933c5d4c01a4183442eb76134098
+      internalID: -8051198402557119266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 321
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910f65c066eb95f49b12fc564fda2e96
+      internalID: 2919602558884133659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 241
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468cc82a87ed05045b124d3c4dc71615
+      internalID: 3907254826661836796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 241
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e22add2901d83458897904d1f9e4a0
+      internalID: -4379638707513509314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 241
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2ec01746d6b0c4181f7308637f9b86
+      internalID: -3942661924046518917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 173
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae873ea8d5602a64fa4e3194de6ee3c7
+      internalID: -5511846262280349176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_19
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 173
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a290d49c662b0f46b308b8effdb68ca
+      internalID: 1207131986886213132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 173
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b14e1ba9a276545bdc7b755e9ab49e
+      internalID: -3689469501162813423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 91
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1db98af59247b2439367b8442554719
+      internalID: -3490652899109203117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_22
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 92
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5abe1623a0b89142ba2b1d338403dbd
+      internalID: 3046413187715026089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 92
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ddc0ed52e2ee74ba9d35d4e660ec2b
+      internalID: 4247438718487425689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d5e7acc8165e84db39cd936cad5dfb
+      internalID: 3943245423910098445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28484fc12e3ed6d47906eacc68c48d66
+      internalID: 805239448750650049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tux_from_linux_26
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602225dd99f005c49984db23755a2397
+      internalID: 6663438018520532959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
