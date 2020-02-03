@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
         // Disable in case of too many players
         if (playerNum > GameManager.instance.playersRemaining)
             gameObject.SetActive(false);
+        else
+            gameObject.SetActive(true);
 
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();

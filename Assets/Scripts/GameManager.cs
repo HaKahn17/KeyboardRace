@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator reload()
     {
         yield return new WaitForSeconds(1);
+        playersRemaining = 2;
         SceneManager.LoadScene("Title");
     }
 }
