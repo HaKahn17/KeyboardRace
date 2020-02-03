@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 
     bool IsGrounded()
     {
-        var hit = Physics2D.Raycast(transform.position, -Vector2.up, .7f, groundLayer);
+        var hit = Physics2D.Raycast(transform.position, -Vector2.up, .54f, groundLayer);
         return hit.collider != null;
     }
 
