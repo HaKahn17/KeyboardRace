@@ -10,18 +10,15 @@ public class TextController : MonoBehaviour
     public int playerNumber;
     private Dictionary<int, string> ascii;
 
-    private int n;
     // Start is called before the first frame update
     void Start()
     {
         text = GetComponent<Text>();
-        Keycodes.addCodes();
         ascii = new Dictionary<int, string>();
         foreach(var key in Keycodes.getCodes())
         {
             ascii.Add((int)key, key.ToString());
         }
-        n = 0;
     }
 
     // Update is called once per frame
@@ -29,12 +26,7 @@ public class TextController : MonoBehaviour
     {
         int myCode=(int) Keycodes.getPlayerCode(playerNumber);
         text.text = mutilate(ascii[myCode]);
-        n++;
-        if(n==200)
-        {
-            Keycodes.getNewCode(playerNumber);
-            n = 0;
-        }
+        
     }
 
     private string mutilate(string input)
