@@ -34,8 +34,9 @@ public class PlayerController : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.CompareTag("Obstacle"))
+        if (collision.collider.gameObject.CompareTag("Despawn"))
         {
+            FindObjectOfType<GameManager>().PlayersRemaining--;
             Destroy(gameObject);
         }
     }
