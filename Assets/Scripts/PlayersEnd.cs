@@ -7,6 +7,7 @@ public class PlayersEnd : MonoBehaviour
 
     public Sprite[] wonSprites;
     public Sprite[] lostSprites;
+    public int playerNum;
 
     private bool won;
 
@@ -18,6 +19,15 @@ public class PlayersEnd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        if (playerNum > GameManager.instance.totalPlayers)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+            gameObject.SetActive(true);
+        framesPerSprite = 15;
+        won = playerNum==GameManager.instance.winNum;
         if(won)
         {
             transform.position = new Vector2(7,1.2F);

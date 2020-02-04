@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Liam2.unity
     guid: 82669f067974275418c971444043027f
+  - enabled: 1
+    path: Assets/Scenes/Victory Screech.unity
+    guid: dd0db1ac0ca059747883530aae91723f
   m_configObjects: {}

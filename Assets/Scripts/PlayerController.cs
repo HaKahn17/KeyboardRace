@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour {
     {
         isDead = true;
         audioSource.PlayOneShot(deathNoise);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.9F);
         Destroy(gameObject);
     }
 
