@@ -2010,6 +2010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InvisibleWall
       objectReference: {fileID: 0}
+    - target: {fileID: 7178190227599603684, guid: d052af7cb6d09e148813144c4b5f0ae7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Invisible Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 7178190227599603690, guid: d052af7cb6d09e148813144c4b5f0ae7,
         type: 3}
       propertyPath: m_LocalPosition.x

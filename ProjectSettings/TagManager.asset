@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Despawn
   - Obstacle
+  - Invisible Wall
   layers:
   - Default
   - TransparentFX
