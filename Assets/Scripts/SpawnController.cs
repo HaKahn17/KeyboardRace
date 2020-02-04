@@ -47,7 +47,7 @@ public class SpawnController : MonoBehaviour
             // Random powerup spawning
             if (Random.Range(0, 10) <= 2)
             {
-                rand = Random.Range(0, 2);
+                rand = Random.Range(0, 3);
                 switch (rand)
                 {
                     case 0:
@@ -57,6 +57,10 @@ public class SpawnController : MonoBehaviour
                     case 1:
                         obsPos = new Vector3(transform.position.x, transform.position.y - Random.Range(0,1F));
                         Instantiate(powerUps[1], obsPos, Quaternion.identity);
+                        break;
+                    case 2:
+                        obsPos = new Vector3(transform.position.x, transform.position.y - Random.Range(0, 1F));
+                        Instantiate(powerUps[2], obsPos, Quaternion.identity);
                         break;
                 }
             }
