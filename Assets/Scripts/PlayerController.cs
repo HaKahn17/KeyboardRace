@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour {
 
     
 
-    private void RandomizeKey() {
+    public void RandomizeKey() {
 
         Keycodes.getNewCode(playerNum);
         currentKey = Keycodes.getPlayerCode(playerNum);

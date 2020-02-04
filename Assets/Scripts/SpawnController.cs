@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleController : MonoBehaviour
+public class SpawnController : MonoBehaviour
 {
     public int length;
     public float minScale;
     public float maxScale;
     public double timePerObstacle;
+    public GameObject[] powerUps;
     public GameObject bottomObstacle;
     public GameObject topObstacle;
 
