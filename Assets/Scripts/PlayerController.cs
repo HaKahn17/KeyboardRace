@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
         {
             FindObjectOfType<GameManager>().playersRemaining--;
             //TODO make a coroutine so noise is played
-            StartCoroutine(die());
+            StartCoroutine(Die());
             
         }
     }
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour {
         
     }
 
-    public IEnumerator die()
+    public IEnumerator Die()
     {
         isDead = true;
         audioSource.PlayOneShot(deathNoise);

@@ -34,11 +34,8 @@ public class GameManager : MonoBehaviour
         if (playersRemaining == 1 && !gameOver)
         {
             // If one player is remaining reload the scene
-            //TODO: Change to main menu later
             gameOver = true;
-            StartCoroutine(reload());
-            
- 
+            StartCoroutine(Reload());
         }
     }
 
@@ -47,10 +44,11 @@ public class GameManager : MonoBehaviour
         playersRemaining = (int)val;
     }
 
-    public IEnumerator reload()
+    public IEnumerator Reload()
     {
         yield return new WaitForSeconds(1);
         playersRemaining = 2;
+        gameOver = false;
         SceneManager.LoadScene("Title");
     }
 }
