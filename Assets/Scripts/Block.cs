@@ -39,7 +39,7 @@ public class Block : Powerup
         sr = GetComponent<SpriteRenderer>();
     }
 
-    IEnumerator Timer(float dur)
+    public override IEnumerator Timer(float dur)
     {
         yield return new WaitForSeconds(dur);
         foreach (var player in players)

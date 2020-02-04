@@ -26,7 +26,7 @@ public class Speedup : Powerup
         sr = GetComponent<SpriteRenderer>();
     }
 
-    IEnumerator Timer(float dur)
+    public override IEnumerator Timer(float dur)
     {
         yield return new WaitForSeconds(dur);
         pc.moveSpeed -= speedIncrease;
