@@ -1526,6 +1526,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMinLength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMaxLength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMaxWidth
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: length
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: obstacleMinWidth
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: minScale
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
+      propertyPath: maxScale
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1783041111720318248, guid: bb9e80958dd71cc49826eff83b9ce989,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1534,7 +1562,7 @@ PrefabInstance:
     - target: {fileID: 1783041111720318248, guid: bb9e80958dd71cc49826eff83b9ce989,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1783041111720318248, guid: bb9e80958dd71cc49826eff83b9ce989,
         type: 3}
