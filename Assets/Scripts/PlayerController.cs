@@ -97,9 +97,14 @@ public class PlayerController : MonoBehaviour {
         
     }
 
-    
+    public void BlockKey()
+    {
+        Keycodes.BlockCode(playerNum);
+        currentKey = KeyCode.At;
+    }
 
-    private void RandomizeKey() {
+
+    public void RandomizeKey() {
 
         Keycodes.getNewCode(playerNum);
         currentKey = Keycodes.getPlayerCode(playerNum);

@@ -25,11 +25,11 @@ public class TextController : MonoBehaviour
     void Update()
     {
         int myCode=(int) Keycodes.getPlayerCode(playerNumber);
-        text.text = mutilate(ascii[myCode]);
+        text.text = Mutilate(ascii[myCode]);
         
     }
 
-    private string mutilate(string input)
+    private string Mutilate(string input)
     {
         if (input.Equals("RightBracket"))
         {
@@ -82,6 +82,10 @@ public class TextController : MonoBehaviour
         if (input.Contains("Alpha"))
         {
             return input.Substring(5);
+        }
+        if (input.Equals("At"))
+        {
+            return "";
         }
         else
             return input;
