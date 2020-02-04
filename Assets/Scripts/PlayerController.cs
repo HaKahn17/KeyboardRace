@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(Die());
             
         }
-        if(collision.collider.gameObject.CompareTag("Invisible Wall"))
+        if(collision.collider.gameObject.CompareTag("Invisible Wall")||collision.collider.gameObject.CompareTag("Obstacle"))
         {
             realSpeed = 0;
         }
