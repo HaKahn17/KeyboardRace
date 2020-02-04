@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public int playersRemaining;
+    public int winNum;
+    public int totalPlayers;
 
     private bool gameOver;
 
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         gameOver = false;
+        winNum = 0;
+
         Keycodes.addCodes();
     }
 
@@ -35,7 +39,15 @@ public class GameManager : MonoBehaviour
         {
             playersRemaining = 2;
             // If one player is remaining reload the scene
+            /*
+            GameObject winner = GameObject.FindWithTag("Player");
+            if (winner != null) {
+                winNum = winner.GetComponent<PlayerController>().playerNum;
+            } else {
+                winNum = 0;
+            }*/
             gameOver = true;
+
             StartCoroutine(Reload());
         }
     }
@@ -43,12 +55,27 @@ public class GameManager : MonoBehaviour
     public void SetNumPlayers(float val)
     {
         playersRemaining = (int)val;
+        totalPlayers = playersRemaining;
     }
 
     public IEnumerator Reload()
     {
         yield return new WaitForSeconds(1);
+        GameObject winner = GameObject.FindWithTag("Player");
+        if (winner != null)
+        {
+            winNum = winner.GetComponent<PlayerController>().playerNum;
+        }
+        else
+        {
+            winNum = 0;
+        }
         gameOver = false;
-        SceneManager.LoadScene("Title");
+        if (winNum == 0) {
+            SceneManager.LoadScene("Title");
+        } else {
+           //TODO load victory scene
+            SceneManager.LoadScene("Victory Screech");
+        }
     }
 }

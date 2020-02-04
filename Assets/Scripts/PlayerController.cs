@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(Die());
             
         }
-        if(collision.collider.gameObject.CompareTag("Invisible Wall"))
+        if(collision.collider.gameObject.CompareTag("Invisible Wall")||collision.collider.gameObject.CompareTag("Obstacle"))
         {
             realSpeed = 0;
         }
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour {
     {
         isDead = true;
         audioSource.PlayOneShot(deathNoise);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.9F);
         Destroy(gameObject);
     }
 
