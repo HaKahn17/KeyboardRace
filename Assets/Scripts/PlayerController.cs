@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour {
     public int playerNum;
     public AudioClip deathNoise;
     public AudioClip jumpNoise;
-    public Sprite[] sprites;
+    public Sprite[] runSprites;
+    public Sprite[] jumpSprites;
 
     private Rigidbody2D rb2d;
     private AudioSource audioSource;
@@ -17,20 +18,27 @@ public class PlayerController : MonoBehaviour {
     private KeyCode currentKey;
     private bool isDead;
 
+    public int framesPerSecond;
+    private int currentFrameIndex;
+    private bool grounded;
+
     // Start is called before the first frame update
     void Start() 
     {
         // Disable in case of too many players
-        if (playerNum > GameManager.instance.playersRemaining)
+        if (playerNum > GameManager.instance.playersRemaining) {
             gameObject.SetActive(false);
-        else
+        } else {
             gameObject.SetActive(true);
+            StartCoroutine("PlayAnimation");
+        }
 
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
         RandomizeKey();
         isDead = false;
+        currentFrameIndex = 0;
     }
 
     // Update is called once per frame
@@ -38,13 +46,14 @@ public class PlayerController : MonoBehaviour {
     {
         if (isDead)
             return;
-        if (Input.GetKeyDown(currentKey) && IsGrounded()) 
+        grounded = IsGrounded();
+        if (Input.GetKeyDown(currentKey) && grounded) 
         {
             audioSource.PlayOneShot(jumpNoise);
             rb2d.velocity += Vector2.up * jumpSpeed;
             RandomizeKey();
         }
-        else if (IsGrounded())
+        else if (grounded)
         {
             rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
         }
@@ -83,5 +92,28 @@ public class PlayerController : MonoBehaviour {
         audioSource.PlayOneShot(deathNoise);
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
+    }
+
+  
+    IEnumerator PlayAnimation() {
+        while (true) {
+
+            yield return new WaitForSeconds(1f / framesPerSecond);
+            if (grounded) {
+                if (currentFrameIndex >= runSprites.Length) {
+                    currentFrameIndex = 0;
+                }
+                sr.sprite = runSprites[currentFrameIndex];
+                currentFrameIndex++;
+                
+            } else {
+                if (currentFrameIndex >= jumpSprites.Length) {
+                    currentFrameIndex = 0;
+                }
+                sr.sprite = jumpSprites[currentFrameIndex];
+                currentFrameIndex++;
+                
+            }
+        }
     }
 }
