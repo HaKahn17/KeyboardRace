@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1783041111720318248}
   - component: {fileID: 1429311243}
   m_Layer: 0
-  m_Name: ObstacleSpawner
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -45,8 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   length: 4
   minScale: 0.7
-  maxScale: 1.1
+  maxScale: 1
   timePerObstacle: 1.5
+  powerUps:
+  - {fileID: 4152593497637782306, guid: 3ef04b19c1a450a43b5897272695e783, type: 3}
+  - {fileID: 4152593497637782306, guid: 6a78120aa08db90449892f535a51b070, type: 3}
   bottomObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,
     type: 3}
   topObstacle: {fileID: 7222428371601343122, guid: 79dc3788bf17c854eb9d4278125f7e67,

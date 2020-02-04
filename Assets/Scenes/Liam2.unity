@@ -1531,20 +1531,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: powerUps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: powerUps.Array.data[0]
-      value: 
-      objectReference: {fileID: 4152593497637782306, guid: 3ef04b19c1a450a43b5897272695e783,
-        type: 3}
-    - target: {fileID: 1429311243, guid: bb9e80958dd71cc49826eff83b9ce989, type: 3}
-      propertyPath: powerUps.Array.data[1]
-      value: 
-      objectReference: {fileID: 4152593497637782306, guid: 6a78120aa08db90449892f535a51b070,
-        type: 3}
     - target: {fileID: 1783041111720318248, guid: bb9e80958dd71cc49826eff83b9ce989,
         type: 3}
       propertyPath: m_LocalPosition.x
