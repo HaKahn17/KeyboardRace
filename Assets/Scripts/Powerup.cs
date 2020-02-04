@@ -24,4 +24,6 @@ public abstract class Powerup : MonoBehaviour
         }
     }
 
+    public abstract IEnumerator Timer(float duration);
+
 }
