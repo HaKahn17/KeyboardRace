@@ -82,6 +82,10 @@ public class PlayerController : MonoBehaviour {
         {
             realSpeed = 0;
         }
+        else
+        {
+            realSpeed = moveSpeed;
+        }
         
     }
 
