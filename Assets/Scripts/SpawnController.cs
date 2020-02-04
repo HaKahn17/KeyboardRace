@@ -51,11 +51,11 @@ public class SpawnController : MonoBehaviour
                 switch (rand)
                 {
                     case 0:
-                        obsPos = new Vector3(transform.position.x, transform.position.y - .5f);
+                        obsPos = new Vector3(transform.position.x, transform.position.y - Random.Range(0,1F));
                         Instantiate(powerUps[0], obsPos, Quaternion.identity);
                         break;
                     case 1:
-                        obsPos = new Vector3(transform.position.x, transform.position.y - .5f);
+                        obsPos = new Vector3(transform.position.x, transform.position.y - Random.Range(0,1F));
                         Instantiate(powerUps[1], obsPos, Quaternion.identity);
                         break;
                 }
