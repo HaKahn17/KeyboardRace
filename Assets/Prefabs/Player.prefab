@@ -154,6 +154,14 @@ MonoBehaviour:
   playerNum: 1
   deathNoise: {fileID: 8300000, guid: f8258d68b475a8042ae5001d579a40f1, type: 3}
   jumpNoise: {fileID: 8300000, guid: e29acdd2742196847991adc5db631718, type: 3}
+  runSprites:
+  - {fileID: 3379560780238396476, guid: b96a81f50892efc4a81ef7c43a2120ae, type: 3}
+  - {fileID: 8407092797113387813, guid: b96a81f50892efc4a81ef7c43a2120ae, type: 3}
+  - {fileID: -5940274253279058474, guid: b96a81f50892efc4a81ef7c43a2120ae, type: 3}
+  jumpSprites:
+  - {fileID: -8170253277688459536, guid: b96a81f50892efc4a81ef7c43a2120ae, type: 3}
+  - {fileID: 6675199520039018268, guid: b96a81f50892efc4a81ef7c43a2120ae, type: 3}
+  framesPerSecond: 10
 --- !u!82 &1225152578510031495
 AudioSource:
   m_ObjectHideFlags: 0
