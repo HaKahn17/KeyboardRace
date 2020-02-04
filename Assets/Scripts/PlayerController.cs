@@ -15,8 +15,10 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
     private AudioSource audioSource;
     private SpriteRenderer sr;
+    private Collider2D col;
     private KeyCode currentKey;
     private bool isDead;
+    private float realSpeed;
 
     public int framesPerSecond;
     private int currentFrameIndex;
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour {
     // Start is called before the first frame update
     void Start() 
     {
+        realSpeed = moveSpeed;
         // Disable in case of too many players
         if (playerNum > GameManager.instance.playersRemaining) {
             gameObject.SetActive(false);
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
         RandomizeKey();
         isDead = false;
         currentFrameIndex = 0;
@@ -44,6 +48,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() 
     {
+       
         if (isDead)
             return;
         grounded = IsGrounded();
@@ -55,17 +60,21 @@ public class PlayerController : MonoBehaviour {
         }
         else if (grounded)
         {
-            rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+            rb2d.velocity = new Vector2(realSpeed, rb2d.velocity.y);
         }
     }
 
     bool IsGrounded()
     {
+        return col.IsTouchingLayers(playerMask | groundLayer) ;
+
+        /*
         LayerMask combined = groundLayer | playerMask;
         Vector2 origin = transform.position - new Vector3(0, GetComponent<BoxCollider2D>().size.y/2);
         var hit = Physics2D.Raycast(origin, -Vector2.up, .1f, combined);
         Debug.DrawRay(origin, -Vector2.up, Color.green);
         return hit.collider != null;
+        */
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -77,8 +86,15 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(die());
             
         }
+        if(collision.collider.gameObject.CompareTag("Invisible Wall"))
+        {
+            realSpeed = 0;
+        }
+        
     }
+
     
+
     private void RandomizeKey() {
 
         Keycodes.getNewCode(playerNum);
