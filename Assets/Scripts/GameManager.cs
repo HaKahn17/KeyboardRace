@@ -39,13 +39,7 @@ public class GameManager : MonoBehaviour
         {
             playersRemaining = 2;
             // If one player is remaining reload the scene
-            /*
-            GameObject winner = GameObject.FindWithTag("Player");
-            if (winner != null) {
-                winNum = winner.GetComponent<PlayerController>().playerNum;
-            } else {
-                winNum = 0;
-            }*/
+           
             gameOver = true;
 
             StartCoroutine(Reload());
