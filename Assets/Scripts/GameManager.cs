@@ -31,8 +31,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playersRemaining == 1 && !gameOver)
+        if (playersRemaining <= 1 && !gameOver)
         {
+            playersRemaining = 2;
             // If one player is remaining reload the scene
             gameOver = true;
             StartCoroutine(Reload());
@@ -47,7 +48,6 @@ public class GameManager : MonoBehaviour
     public IEnumerator Reload()
     {
         yield return new WaitForSeconds(1);
-        playersRemaining = 2;
         gameOver = false;
         SceneManager.LoadScene("Title");
     }
