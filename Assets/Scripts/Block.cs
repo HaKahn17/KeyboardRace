@@ -5,7 +5,7 @@ using UnityEngine;
 public class Block : Powerup
 {
 
-    private PlayerController pc;
+    private PlayerController pc = null;
     private PlayerController[] players;
     private SpriteRenderer sr;
 
@@ -13,20 +13,22 @@ public class Block : Powerup
 
     public override void Effect(GameObject player)
     {
+        
+        if (pc != null)
+            return;
         pc = player.GetComponent<PlayerController>();
         playerNumber = pc.playerNum;
+        
         players = FindObjectsOfType<PlayerController>();
         foreach (var p in players)
         {
             if (p.playerNum != playerNumber)
             {
-                Debug.Log(p.playerNum);
                 p.BlockKey();
             }
 
         }
         sr.enabled = false;
-        GetComponent<CircleCollider2D>().enabled = false;
         StartCoroutine(Timer(duration));
     }
 
@@ -44,7 +46,6 @@ public class Block : Powerup
         {
             if (player.playerNum != playerNumber)
             {
-                Debug.Log(player.playerNum);
                 player.RandomizeKey();
             }
             

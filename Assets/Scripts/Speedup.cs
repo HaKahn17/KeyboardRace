@@ -6,15 +6,16 @@ public class Speedup : Powerup
 {
     public int speedIncrease;
 
-    private PlayerController pc;
+    private PlayerController pc = null;
     private SpriteRenderer sr;
 
     public override void Effect(GameObject player)
     {
+        if (pc != null)
+            return;
         pc = player.GetComponent<PlayerController>();
         pc.moveSpeed += speedIncrease;
         sr.enabled = false;
-        GetComponent<CircleCollider2D>().enabled = false;
         StartCoroutine(Timer(duration));
     }
 

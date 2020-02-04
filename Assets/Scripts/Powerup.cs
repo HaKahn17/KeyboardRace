@@ -19,6 +19,7 @@ public abstract class Powerup : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GetComponent<CircleCollider2D>().enabled = false;
             Effect(collision.gameObject);
         }
     }
