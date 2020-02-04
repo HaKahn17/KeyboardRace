@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Speedup : Powerup
 {
+    public int speedIncrease;
 
     private PlayerController pc;
     private SpriteRenderer sr;
@@ -11,8 +12,9 @@ public class Speedup : Powerup
     public override void Effect(GameObject player)
     {
         pc = player.GetComponent<PlayerController>();
-        pc.moveSpeed += 2;
+        pc.moveSpeed += speedIncrease;
         sr.enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
         StartCoroutine(Timer(duration));
     }
 
@@ -25,8 +27,8 @@ public class Speedup : Powerup
 
     IEnumerator Timer(float dur)
     {
-        yield return new WaitForSeconds(duration);
-        pc.moveSpeed -= 2;
+        yield return new WaitForSeconds(dur);
+        pc.moveSpeed -= speedIncrease;
         Destroy(gameObject);
     }
 }

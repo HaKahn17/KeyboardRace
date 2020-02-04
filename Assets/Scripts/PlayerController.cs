@@ -97,7 +97,12 @@ public class PlayerController : MonoBehaviour {
         
     }
 
-    
+    public void BlockKey()
+    {
+        Keycodes.BlockCode(playerNum);
+        currentKey = KeyCode.At;
+    }
+
 
     public void RandomizeKey() {
 

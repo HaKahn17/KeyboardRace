@@ -5,14 +5,21 @@ using UnityEngine;
 public abstract class Powerup : MonoBehaviour
 {
     public float duration;
+    public float moveSpeed;
 
     public abstract void Effect(GameObject player);
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
     {
-        if (collision.collider.gameObject.CompareTag("Player"))
+        Vector3 movement = new Vector3(-moveSpeed, 0);
+        transform.position += movement * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Effect(collision.collider.gameObject);
+            Effect(collision.gameObject);
         }
     }
 

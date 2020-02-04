@@ -6,6 +6,7 @@ public class Block : Powerup
 {
 
     private PlayerController pc;
+    private PlayerController[] players;
     private SpriteRenderer sr;
 
     private int playerNumber;
@@ -14,14 +15,18 @@ public class Block : Powerup
     {
         pc = player.GetComponent<PlayerController>();
         playerNumber = pc.playerNum;
-        for (int i = 1; i <= 4; i++)
+        players = FindObjectsOfType<PlayerController>();
+        foreach (var p in players)
         {
-            if (i != playerNumber)
+            if (p.playerNum != playerNumber)
             {
-                Keycodes.BlockCode(i);
+                Debug.Log(p.playerNum);
+                p.BlockKey();
             }
+
         }
         sr.enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
         StartCoroutine(Timer(duration));
     }
 
@@ -35,11 +40,14 @@ public class Block : Powerup
     IEnumerator Timer(float dur)
     {
         yield return new WaitForSeconds(dur);
-        PlayerController[] players = GetComponents<PlayerController>();
         foreach (var player in players)
         {
-            Debug.Log(player.playerNum);
-            player.RandomizeKey();
+            if (player.playerNum != playerNumber)
+            {
+                Debug.Log(player.playerNum);
+                player.RandomizeKey();
+            }
+            
         }
         Destroy(gameObject);
     }

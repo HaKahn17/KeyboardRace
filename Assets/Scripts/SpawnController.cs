@@ -43,6 +43,26 @@ public class SpawnController : MonoBehaviour
                     break;
             }
 
+           
+            // Random powerup spawning
+            if (Random.Range(0, 10) <= 2)
+            {
+                rand = Random.Range(0, 2);
+                switch (rand)
+                {
+                    case 0:
+                        obsPos = new Vector3(transform.position.x, transform.position.y - .5f);
+                        Instantiate(powerUps[0], obsPos, Quaternion.identity);
+                        break;
+                    case 1:
+                        obsPos = new Vector3(transform.position.x, transform.position.y - .5f);
+                        Instantiate(powerUps[1], obsPos, Quaternion.identity);
+                        break;
+                }
+            }
+            
+            
+
             // Random length
             if (obs != null)
             {
